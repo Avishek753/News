@@ -1,9 +1,9 @@
 # Next_n_Now Login
 
-This project contains a simple login page. To view it locally using a Node.js server:
+This project contains a simple login page. No external Node.js dependencies are required.
+To view it locally run:
 
 ```bash
-npm install     # install dependencies the first time
 npm start       # start the development server
 ```
 
