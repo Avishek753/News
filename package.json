@@ -1,0 +1,12 @@
+{
+  "name": "next_n_now",
+  "version": "1.0.0",
+  "description": "Simple server for Next_n_Now login page",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
