@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     passwordInput.addEventListener('input', updateButtonState);
     termsCheckbox.addEventListener('change', updateButtonState);
 
+main
     document.getElementById('loginForm').addEventListener('submit', function(e) {
         if (loginBtn.disabled) {
             e.preventDefault();
