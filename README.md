@@ -1,10 +1,23 @@
 # Next_n_Now Login
 
-This project contains a simple login page. To view it locally using a Node.js server:
+This project now includes a basic registration and login flow using a PostgreSQL database.
+
+## Setup
+
+1. Install dependencies:
 
 ```bash
-npm install     # install dependencies the first time
-npm start       # start the development server
+npm install
 ```
 
-The server will automatically open [http://localhost:3000/login.html](http://localhost:3000/login.html) in your default browser. You can also browse to `http://localhost:3000/`, which now displays the same login page.
+2. Provide a PostgreSQL connection string via the `DATABASE_URL` environment variable.
+
+3. Start the server:
+
+```bash
+npm start
+```
+
+The server opens [http://localhost:3000/login.html](http://localhost:3000/login.html).
+
+Registered users can log in, and new users can register through `signup.html`.

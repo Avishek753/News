@@ -7,7 +7,6 @@
 body {
     font-family: Arial, sans-serif;
     background: #f4f4f4;
-main
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -38,7 +37,6 @@ main
 header {
     padding: 1rem;
     text-align: left;
-main
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -89,7 +87,6 @@ form {
 
 .checkbox-group label {
     margin-left: 0.5rem;
-main
 }
 
 button[type="submit"] {
@@ -119,10 +116,8 @@ button[type="submit"]:enabled {
     text-decoration: none;
 }
 
-main
 @media (max-width: 600px) {
     form {
         padding: 1rem;
     }
 }
-main
