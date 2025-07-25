@@ -6,17 +6,39 @@
 
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(45deg, #f4f4f4, #e0e0e0);
-    background-size: 400% 400%;
-    animation: gradientBG 10s ease infinite;
+    background: #f4f4f4;
+main
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
+.news-ticker {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #222;
+    color: #fff;
+    pointer-events: none;
+}
+
+.news-ticker .ticker-text {
+    display: inline-block;
+    padding-left: 100%;
+    white-space: nowrap;
+    animation: ticker 20s linear infinite;
+}
+
+@keyframes ticker {
+    from { transform: translateX(0); }
+    to { transform: translateX(-100%); }
+}
 
 header {
     padding: 1rem;
-    text-align: right;
+    text-align: left;
+main
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
@@ -61,18 +83,13 @@ form {
 }
 
 .checkbox-group {
-    display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem;
 }
 
 .checkbox-group label {
-    margin-left: 0;
-}
-
-.checkbox-group input[type="checkbox"] {
-    margin: 0;
+    margin-left: 0.5rem;
+main
 }
 
 button[type="submit"] {
@@ -95,15 +112,17 @@ button[type="submit"]:enabled {
     text-align: center;
     margin-top: 1rem;
 }
+.signup-link a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+}
 
+main
 @media (max-width: 600px) {
     form {
         padding: 1rem;
     }
 }
-
-@keyframes gradientBG {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
+main

@@ -20,9 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
     passwordInput.addEventListener('input', updateButtonState);
     termsCheckbox.addEventListener('change', updateButtonState);
 
-    // Initialize button state in case of autofill or cached values
-    updateButtonState();
-
+main
     document.getElementById('loginForm').addEventListener('submit', function(e) {
         if (loginBtn.disabled) {
             e.preventDefault();
