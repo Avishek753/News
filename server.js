@@ -1,3 +1,5 @@
+'use strict';
+
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
@@ -20,7 +22,15 @@ function getContentType(filePath) {
 }
 
 const server = http.createServer((req, res) => {
-  let filePath = path.join(root, req.url === '/' ? 'login.html' : req.url);
+  const reqPath = req.url === '/' ? '/login.html' : decodeURIComponent(req.url);
+  const filePath = path.normalize(path.join(root, reqPath));
+
+  if (!filePath.startsWith(root)) {
+    res.writeHead(400);
+    res.end('Bad Request');
+    return;
+  }
+
   fs.readFile(filePath, (err, content) => {
     if (err) {
       res.writeHead(404);
