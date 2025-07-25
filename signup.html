@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Next_n_Now</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="company-name">Next_n_Now</div>
+    </header>
+    <div class="news-ticker">
+        <div class="ticker-text">Breaking News - Stay updated with Next_n_Now &bull; Breaking News - Stay updated with Next_n_Now</div>
+    </div>
+    <main>
+        <form id="signupForm" novalidate method="POST" action="/register">
+            <div class="form-group">
+                <label for="signupEmail">Email</label>
+                <input type="email" id="signupEmail" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="username">User Name</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="signupPassword">Password</label>
+                <input type="password" id="signupPassword" name="password" required>
+            </div>
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" required>
+            </div>
+            <button type="submit" id="signupBtn" disabled>Register</button>
+            <div class="signup-link">
+                <a href="login.html">Back to login</a>
+            </div>
+        </form>
+    </main>
+    <script src="signup.js"></script>
+</body>
+</html>
